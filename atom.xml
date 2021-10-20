@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-09-18T02:35:20.000Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>text</title>
+    <link href="http://example.com/2021/10/16/text/"/>
+    <id>http://example.com/2021/10/16/text/</id>
+    <published>2021-10-15T16:26:56.707Z</published>
+    <updated>2021-09-18T02:35:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>ui撒谎覅户籍卡和付款计划积分卡很快就<br>date: 2021-09-18 10:34:49<br>tags:</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;ui撒谎覅户籍卡和付款计划积分卡很快就&lt;br&gt;date: 2021-09-18 10:34:49&lt;br&gt;tags:&lt;/p&gt;
+&lt;hr&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test3</title>
+    <link href="http://example.com/2021/10/16/test3/"/>
+    <id>http://example.com/2021/10/16/test3/</id>
+    <published>2021-10-15T16:26:56.702Z</published>
+    <updated>2021-09-18T03:00:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>—what could be more romantic than that<br>date: 2021-09-18 10:59:03<br>tags:</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;—what could be more romantic than that&lt;br&gt;date: 2021-09-18 10:59:03&lt;br&gt;tags:&lt;/p&gt;
+&lt;hr&gt;
+</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test2</title>
+    <link href="http://example.com/2021/10/16/test2/"/>
+    <id>http://example.com/2021/10/16/test2/</id>
+    <published>2021-10-15T16:26:56.697Z</published>
+    <updated>2021-09-18T02:46:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="I-LOVE-YOUR"><a href="#I-LOVE-YOUR" class="headerlink" title="I LOVE YOUR"></a>I LOVE YOUR</h2><p>date: 2021-09-18 10:46:00<br>tags:</p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;I-LOVE-YOUR&quot;&gt;&lt;a href=&quot;#I-LOVE-YOUR&quot; class=&quot;headerlink&quot; title=&quot;I LOVE YOUR&quot;&gt;&lt;/a&gt;I LOVE YOUR&lt;/h2&gt;&lt;p&gt;date: 2021-09-18 10:46:00&lt;br&gt;tags:</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2021/10/16/hello-world/"/>
+    <id>http://example.com/2021/10/16/hello-world/</id>
+    <published>2021-10-15T16:26:56.695Z</published>
+    <updated>2021-09-18T02:06:22.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>CTF中pwn的入门指南</title>
+    <link href="http://example.com/2021/09/27/CTF%E4%B8%ADpwn%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/"/>
+    <id>http://example.com/2021/09/27/CTF%E4%B8%ADpwn%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/</id>
+    <published>2021-09-27T03:14:35.000Z</published>
+    <updated>2021-09-27T03:41:46.000Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>                          基础知识准备：</code></pre><p>c语言<br>汇编语言<br>python<br>操作系统<br>linux操作<br>  （<img src="https://s3.bmp.ovh/imgs/2021/09/1a66c2b3779a6ce7.jpg">）</p><pre><code>                              主流工具的使用：</code></pre><p>IDA pro  静态分析神器，必备。<br>ollydbg  动态分析使用，分析程序的流程。<br>windbg  windows下的动态分析神器，可以调试内核态，谨慎使用。<br>gdb  linux下的调试程序，同样作用很大。<br>pwntools  python第三方库，用于开发exp。<br>pwndbg  gdb调试的一个插件，可以显示一些调试信息很有用。<br>                                    学习网站推荐：<br>看雪论坛 <a href="https://bbs.pediy.com/">https://bbs.pediy.com</a><br>学破解论坛 <a href="https://www.xuepojie.com/">https://www.xuepojie.com</a><br>吾爱破解 <a href="https://www.52pojie.cn/">https://www.52pojie.cn</a><br>i春秋 <a href="https://www.ichunqiu.com/">https://www.ichunqiu.com</a><br>实验吧 <a href="http://www.shiyanbar.com/">http://www.shiyanbar.com</a><br>漏洞银行 <a href="https://www.bugbank.cn/live">https://www.bugbank.cn/live</a><br><img src="https://s3.bmp.ovh/imgs/2021/09/001fb0fedd2ca002.jpg" alt="eihei"></p><hr>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;pre&gt;&lt;code&gt;                          基础知识准备：
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;c语言&lt;br&gt;汇编语言&lt;br&gt;python&lt;br&gt;操作系统&lt;br&gt;linux操作&lt;br&gt;  （&lt;img src=&quot;https://s3.bmp.ovh/im</summary>
+      
+    
+    
+    
+    
+    <category term="ctf" scheme="http://example.com/tags/ctf/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>text4</title>
+    <link href="http://example.com/2021/09/19/text4/"/>
+    <id>http://example.com/2021/09/19/text4/</id>
+    <published>2021-09-19T03:50:53.000Z</published>
+    <updated>2021-09-19T04:15:48.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>海贼</p><span id="more"></span><p><img src="https://s3.bmp.ovh/imgs/2021/09/5f2061f855ae7d3e.jpeg" alt="海贼王yyds"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;海贼&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>
