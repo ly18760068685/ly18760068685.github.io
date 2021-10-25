@@ -332,6 +332,169 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-MySQL基本查询语句" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" class="article-date">
+      <time datetime="2021-10-25T13:26:10.000Z" itemprop="datePublished">2021-10-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL基本查询语句</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>MySQL基本查询语句<br>1、查看当前使用的是哪个数据库</p>
+<p>mysql&gt; select database();</p>
+<p>另外，在下面2个语句的输出里也能看出当前库是哪一个</p>
+<p>mysql&gt; show tables;</p>
+<p>mysql&gt; status;</p>
+<p>2、查看MySQL版本和状态</p>
+<p>mysql&gt; select VERSION();</p>
+<p>mysql&gt; status;</p>
+<p>3、查看MySQL实例的当前状态（参数形式）</p>
+<p>mysql&gt; show status;</p>
+<p>4、查看MySQL实例的参数</p>
+<p>mysql&gt; show variables;</p>
+<p>查看最大连接数</p>
+<p>mysql&gt; show variables like ‘%max_connections%’;</p>
+<p>5、查看MySQL实例当前的进程</p>
+<p>mysql&gt; show processlist;</p>
+<p>6、查询所有数据</p>
+<p>select * from Info 查所有数据</p>
+<p>select Code,Name from Info 查特定列</p>
+<p>7、根据条件查</p>
+<p>select * from Info where Code=’p001’ 一个条件查询 </p>
+<p>select * from Info where Code=’p001’ and Natio n=’n001’ 多条件 并关系 查询</p>
+<p>select * from Info where Name=’胡军’ or Nation=’n001’ 多条件 或关系 查询</p>
+<p>select * from Car where Price&gt;=50 and Price&lt;=60 范围查询</p>
+<p>select * from Car where Price between 50 and 60 范围查询</p>
+<p>8、模糊查询</p>
+<p>select * from Car where Name like ‘%型’ %通配符代表任意多个字符</p>
+<p>select * from Car where Name like ‘%奥迪%’</p>
+<p>select * from Car where Name like ‘_马%’ _通配符代表任意一个字符</p>
+<p>9、排序</p>
+<p>select * from Car order by Price asc 按照价格升序排列</p>
+<p>select * from Car order by Price desc 按照价格降序排列</p>
+<p>select * from Car order by Price,Oil 按照两列进行排序，前面的为主要的</p>
+<p>10、统计函数（聚合函数）</p>
+<p>select count(Code) from Car 查询表中有多少条数据</p>
+<p>select max(Price) from Car 取价格的最大值</p>
+<p>select min(Price) from Car 取价格的最小值</p>
+<p>select sum(Price) from Car 取价格的总和</p>
+<p>select avg(Price) from Car 取价格的平均值</p>
+<p>11、分组查询</p>
+<p>select Brand from Car group by Brand having count(*)&gt;2 查询所有系列中数量大于2的</p>
+<p>12、分页查询</p>
+<p>select * from Car limit 0,5 跳过几条数据取几条数据</p>
+<p>13、去重查询</p>
+<p>select distinct Brand from Car</p>
+<p>14、查询建库、建表语句</p>
+<p>mysql&gt; show create database dbname;</p>
+<p>指定库后才能查询建表语句</p>
+<p>mysql&gt; show create table tablename;</p>
+<p>15、查询指定表的字段属性</p>
+<p>mysql&gt; show full columns from tablename;</p>
+<p>或者</p>
+<p>mysql&gt; show full fields from tablename;</p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-sql注入思路及一般步骤" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/" class="article-date">
+      <time datetime="2021-10-25T13:24:32.000Z" itemprop="datePublished">2021-10-25</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/">sql注入思路及一般步骤</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p> Step1正常输入<br> Step2判断是否存在SQL注入漏洞<br>一般来说我们先进行单引号测试，若服务器返回错误，显然并未对单引号作过滤的处理，判断存在SQL注入漏洞<br> Step3判断注入的类型<br>判断注入为数字型还是字符型，一般来说我们考虑这种分类方式<br>   尝试数字型：<br>   尝试字符型：<br> Step4尝试通过SQL注入查询出用户名与密码等敏感信息</p>
+<p>1)获取当前数据库名<br>2)获取数据库表名<br>3)获取表中的列名<br>4获取password信息</p>
+
+      
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-关于html" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">

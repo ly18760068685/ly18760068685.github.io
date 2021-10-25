@@ -3,21 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>text4 | Hexo</title>
+  <title>sql注入思路及一般步骤 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="海贼">
+  <meta name="description" content="Step1正常输入 Step2判断是否存在SQL注入漏洞一般来说我们先进行单引号测试，若服务器返回错误，显然并未对单引号作过滤的处理，判断存在SQL注入漏洞 Step3判断注入的类型判断注入为数字型还是字符型，一般来说我们考虑这种分类方式   尝试数字型：   尝试字符型： Step4尝试通过SQL注入查询出用户名与密码等敏感信息 1)获取当前数据库名2)获取数据库表名3)获取表中的列名4获取p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="text4">
-<meta property="og:url" content="http://example.com/2021/09/19/text4/index.html">
+<meta property="og:title" content="sql注入思路及一般步骤">
+<meta property="og:url" content="http://example.com/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="海贼">
+<meta property="og:description" content="Step1正常输入 Step2判断是否存在SQL注入漏洞一般来说我们先进行单引号测试，若服务器返回错误，显然并未对单引号作过滤的处理，判断存在SQL注入漏洞 Step3判断注入的类型判断注入为数字型还是字符型，一般来说我们考虑这种分类方式   尝试数字型：   尝试字符型： Step4尝试通过SQL注入查询出用户名与密码等敏感信息 1)获取当前数据库名2)获取数据库表名3)获取表中的列名4获取p">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s3.bmp.ovh/imgs/2021/09/5f2061f855ae7d3e.jpeg">
-<meta property="article:published_time" content="2021-09-19T03:50:53.000Z">
-<meta property="article:modified_time" content="2021-09-19T04:15:48.000Z">
+<meta property="article:published_time" content="2021-10-25T13:24:32.000Z">
+<meta property="article:modified_time" content="2021-10-25T13:28:18.572Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2021/09/5f2061f855ae7d3e.jpeg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -333,11 +331,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-text4" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-sql注入思路及一般步骤" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2021/09/19/text4/" class="article-date">
-      <time datetime="2021-09-19T03:50:53.000Z" itemprop="datePublished">2021-09-19</time>
+      <a href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/" class="article-date">
+      <time datetime="2021-10-25T13:24:32.000Z" itemprop="datePublished">2021-10-25</time>
 </a>
     </div>
   
@@ -350,7 +348,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      text4
+      sql注入思路及一般步骤
     </h1>
   
 
@@ -367,9 +365,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>海贼</p>
-<span id="more"></span>
-<p><img src="https://s3.bmp.ovh/imgs/2021/09/5f2061f855ae7d3e.jpeg" alt="海贼王yyds"></p>
+        <p> Step1正常输入<br> Step2判断是否存在SQL注入漏洞<br>一般来说我们先进行单引号测试，若服务器返回错误，显然并未对单引号作过滤的处理，判断存在SQL注入漏洞<br> Step3判断注入的类型<br>判断注入为数字型还是字符型，一般来说我们考虑这种分类方式<br>   尝试数字型：<br>   尝试字符型：<br> Step4尝试通过SQL注入查询出用户名与密码等敏感信息</p>
+<p>1)获取当前数据库名<br>2)获取数据库表名<br>3)获取表中的列名<br>4获取password信息</p>
 
       
       
@@ -425,13 +422,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2021/09/19/text4/">text4</a></p>
+        <p><span>本文标题:</span><a href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/">sql注入思路及一般步骤</a></p>
         <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
-        <p><span>发布时间:</span>2021年09月19日 - 11时50分</p>
-        <p><span>最后更新:</span>2021年09月19日 - 12时15分</p>
+        <p><span>发布时间:</span>2021年10月25日 - 21时24分</p>
+        <p><span>最后更新:</span>2021年10月25日 - 21时28分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2021/09/19/text4/" title="text4">http://example.com/2021/09/19/text4/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/09/19/text4/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/" title="sql注入思路及一般步骤">http://example.com/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -444,15 +441,20 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/09/27/CTF%E4%B8%ADpwn%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption"><</strong>
       <div class="article-nav-title">
         
-          CTF中pwn的入门指南
+          MySQL基本查询语句
         
       </div>
     </a>
   
+  
+    <a href="/2021/10/21/%E5%85%B3%E4%BA%8Ehtml/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">关于html</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
   
 </nav>
 
@@ -530,13 +532,15 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2021/09/27/CTF%E4%B8%ADpwn%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/" title="上一篇: CTF中pwn的入门指南">
+            <a href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" title="上一篇: MySQL基本查询语句">
                 <i class="fa fa-angle-left"></i>
             </a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+            <a href="/2021/10/21/%E5%85%B3%E4%BA%8Ehtml/" title="下一篇: 关于html">
+                <i class="fa fa-angle-right"></i>
+            </a>
         
     </div>
     <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/">MySQL基本查询语句</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/25/sql%E6%B3%A8%E5%85%A5%E6%80%9D%E8%B7%AF%E5%8F%8A%E4%B8%80%E8%88%AC%E6%AD%A5%E9%AA%A4/">sql注入思路及一般步骤</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/21/%E5%85%B3%E4%BA%8Ehtml/">关于html</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/16/test3/">test3</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/16/test2/">test2</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/10/16/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/09/27/CTF%E4%B8%ADpwn%E7%9A%84%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97/">CTF中pwn的入门指南</a></li><li class="post-list-item"><a class="post-list-link" href="/2021/09/19/text4/">text4</a></li></ul>
