@@ -3,21 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>c语言中的for循环 | Hexo</title>
+  <title>c语言小结（一） | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="除了while循环，C语言中还有 for 循环，它的使用更加灵活，完全可以取代 while 循环。 上节我们使用 while 循环来计算1加到100的值，代码如下：#include &lt;stdio.h&gt;int main(){    int i, sum&#x3D;0;    i &#x3D; 1;  &#x2F;&#x2F;语句①    while(i&lt;&#x3D;100 &#x2F;*语句②*&#x2F; ){        sum+&#x3D;i;">
+  <meta name="description" content="算法结构：     1、顺序结构、选择结构、循环结构；      2、循环结构又分为while型、do-while型、for循环结构；      3、程序流程图；  结构化程序设计方法：     1、自顶向下；      2、逐步细化；      3、模块化设计；      4、结构化编码。  数据类型： 　　常量：常量包括字面常量、直接常量和符号常量； 　　变量：C语言规定标志符只能由字母、数字">
 <meta property="og:type" content="article">
-<meta property="og:title" content="c语言中的for循环">
-<meta property="og:url" content="http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/index.html">
+<meta property="og:title" content="c语言小结（一）">
+<meta property="og:url" content="http://example.com/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="除了while循环，C语言中还有 for 循环，它的使用更加灵活，完全可以取代 while 循环。 上节我们使用 while 循环来计算1加到100的值，代码如下：#include &lt;stdio.h&gt;int main(){    int i, sum&#x3D;0;    i &#x3D; 1;  &#x2F;&#x2F;语句①    while(i&lt;&#x3D;100 &#x2F;*语句②*&#x2F; ){        sum+&#x3D;i;">
+<meta property="og:description" content="算法结构：     1、顺序结构、选择结构、循环结构；      2、循环结构又分为while型、do-while型、for循环结构；      3、程序流程图；  结构化程序设计方法：     1、自顶向下；      2、逐步细化；      3、模块化设计；      4、结构化编码。  数据类型： 　　常量：常量包括字面常量、直接常量和符号常量； 　　变量：C语言规定标志符只能由字母、数字">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://s3.bmp.ovh/imgs/2021/10/ddd79898cb6fe1f3.jpg">
-<meta property="article:published_time" content="2021-10-31T15:13:47.000Z">
-<meta property="article:modified_time" content="2021-10-31T15:21:51.047Z">
+<meta property="article:published_time" content="2021-11-04T11:43:57.000Z">
+<meta property="article:modified_time" content="2021-11-04T11:46:36.044Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://s3.bmp.ovh/imgs/2021/10/ddd79898cb6fe1f3.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -333,11 +331,11 @@
         </header>                
     </div>
 </nav>
-      <div class="body-wrap"><article id="post-c语言中的for循环" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-c语言小结（一）" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/" class="article-date">
-      <time datetime="2021-10-31T15:13:47.000Z" itemprop="datePublished">2021-10-31</time>
+      <a href="/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/" class="article-date">
+      <time datetime="2021-11-04T11:43:57.000Z" itemprop="datePublished">2021-11-04</time>
 </a>
     </div>
   
@@ -350,7 +348,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      c语言中的for循环
+      c语言小结（一）
     </h1>
   
 
@@ -367,34 +365,40 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p>除了while循环，C语言中还有 for 循环，它的使用更加灵活，完全可以取代 while 循环。</p>
-<p>上节我们使用 while 循环来计算1加到100的值，代码如下：<br>#include &lt;stdio.h&gt;<br>int main(){<br>    int i, sum=0;<br>    i = 1;  //语句①<br>    while(i&lt;=100 /*语句②*/ ){<br>        sum+=i;<br>        i++;  //语句③<br>    }<br>    printf(“%d\n”,sum);<br>    return 0;<br>}<br>可以看到，语句①②③被放到了不同的地方，代码结构较为松散。为了让程序更加紧凑，可以使用 for 循环来代替，如下所示：<br>#include &lt;stdio.h&gt;<br>int main(){<br>    int i, sum=0;<br>    for(i=1/<em>语句①</em>/; i&lt;=100/<em>语句②</em>/; i++/<em>语句③</em>/){<br>        sum+=i;<br>    }<br>    printf(“%d\n”,sum);<br>    return 0;<br>}<br>在 for 循环中，语句①②③被集中到了一起，代码结构一目了然。</p>
-<p>for 循环的一般形式为：<br>for(表达式1; 表达式2; 表达式3){<br>    语句块<br>}</p>
-<p>它的运行过程为：</p>
-<ol>
-<li><p>先执行“表达式1”。</p>
-</li>
-<li><p>再执行“表达式2”，如果它的值为真（非0），则执行循环体，否则结束循环。</p>
-</li>
-<li><p>执行完循环体后再执行“表达式3”。</p>
-</li>
-<li><p>重复执行步骤 2) 和 3)，直到“表达式2”的值为假，就结束循环。</p>
-</li>
-</ol>
-<p>上面的步骤中，2) 和 3) 是一次循环，会重复执行，for 语句的主要作用就是不断执行步骤 2) 和 3)。</p>
-<p>“表达式1”仅在第一次循环时执行，以后都不会再执行，可以认为这是一个初始化语句。“表达式2”一般是一个关系表达式，决定了是否还要继续下次循环，称为“循环条件”。“表达式3”很多情况下是一个带有自增或自减操作的表达式，以使循环条件逐渐变得“不成立”。</p>
-<p>for循环的执行过程可用下图表示：</p>
-<p>我们再来分析一下“计算从1加到100的和”的代码：<br>#include &lt;stdio.h&gt;<br>int main(){<br>    int i, sum=0;<br>    for(i=1; i&lt;=100; i++){<br>        sum+=i;<br>    }<br>    printf(“%d\n”,sum);<br>    return 0;<br>}<br>运行结果：<br>5050</p>
-<p>代码分析：</p>
-<ol>
-<li><p>执行到 for 语句时，先给 i 赋初值1，判断 i&lt;=100 是否成立；因为此时 i=1，i&lt;=100 成立，所以执行循环体。循环体执行结束后（sum的值为1），再计算 i++。</p>
-</li>
-<li><p>第二次循环时，i 的值为2，i&lt;=100 成立，继续执行循环体。循环体执行结束后（sum的值为3），再计算 i++。</p>
-</li>
-<li><p>重复执行步骤 2)，直到第101次循环，此时 i 的值为101，i&lt;=100 不成立，所以结束循环。</p>
-</li>
-</ol>
-<p>由此我们可以总结出for循环的一般形式：<br>for(初始化语句; 循环条件; 自增或自减){<br>    语句块<br>}<br><img src="https://s3.bmp.ovh/imgs/2021/10/ddd79898cb6fe1f3.jpg" alt="eihei"></p>
+        <p>算法结构：</p>
+<pre><code>    1、顺序结构、选择结构、循环结构；
+
+    2、循环结构又分为while型、do-while型、for循环结构；
+
+    3、程序流程图；
+</code></pre>
+<p>结构化程序设计方法：</p>
+<pre><code>    1、自顶向下；
+
+    2、逐步细化；
+
+    3、模块化设计；
+
+    4、结构化编码。
+</code></pre>
+<p>数据类型：</p>
+<p>　　常量：常量包括字面常量、直接常量和符号常量；</p>
+<p>　　变量：C语言规定标志符只能由字母、数字和下划线三种字符组成，且第一个字符必须是字母或者下划线；必须压迫先定义后使用；每一个变量被定义以确定类型后，在编译时就能为其分配相应的存储单元；</p>
+<p>　　整数类型：整数常量有十进制、八进制和十六进制；“%d”</p>
+<p>　　整形变量：数据在内存中存放形式是以二进制形式存放；有int型、short int型和long int型，无符号整型变量的范围是-32768—32767，有符号型为0~65535.通常把long定义为32位，把short定义为16位，int可以是32位也可以为16位，这都主要取决于机器字长。</p>
+<p>　　实型常量的表示方法：</p>
+<pre><code>    （1）十进制，0.0；
+
+    （2）指数形式，123e3
+</code></pre>
+<p>　　实型变量：实数型数据在内存中的存放形式，一般在内存中占4个字节，分成整数部分和小数部分存放。实型变量分为float型、double型long double型。实型数据会存在舍入误差。</p>
+<p>　　实型常量的类型：C编译系统将实型常量作为双精度来处理。</p>
+<p>　　字符型数组：</p>
+<pre><code>    （一）字符常量：转义字符（\n——换行，\t——tab,\r——回车，\f——换页，\b——退格，\ddd——1到3位8进制的数代表的字符）
+
+    （二）字符变量：字符数据存储形式实际是以ASCII码存储。“%c”
+</code></pre>
+<p>　　字符串常量：双撇号括起来的一系列字符序列。</p>
 
       
       
@@ -450,13 +454,13 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/">c语言中的for循环</a></p>
+        <p><span>本文标题:</span><a href="/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/">c语言小结（一）</a></p>
         <p><span>文章作者:</span><a href="/" title="访问  的个人博客"></a></p>
-        <p><span>发布时间:</span>2021年10月31日 - 23时13分</p>
-        <p><span>最后更新:</span>2021年10月31日 - 23时21分</p>
+        <p><span>发布时间:</span>2021年11月04日 - 19时43分</p>
+        <p><span>最后更新:</span>2021年11月04日 - 19时46分</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/" title="c语言中的for循环">http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/</a>
-            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <span>原始链接:</span><a class="post-url" href="/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/" title="c语言小结（一）">http://example.com/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://example.com/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/　　作者: " title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script src="/js/clipboard.min.js"></script>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -469,18 +473,9 @@
 
 <nav id="article-nav">
   
-    <a href="/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption"><</strong>
-      <div class="article-nav-title">
-        
-          c语言小结（一）
-        
-      </div>
-    </a>
   
-  
-    <a href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">MySQL基本查询语句</div>
+    <a href="/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">c语言中的for循环</div>
       <strong class="article-nav-caption">></strong>
     </a>
   
@@ -560,13 +555,11 @@
 
     <div class="scroll" id="post-nav-button">
         
-            <a href="/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/" title="上一篇: c语言小结（一）">
-                <i class="fa fa-angle-left"></i>
-            </a>
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
         
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
         
-            <a href="/2021/10/25/MySQL%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2%E8%AF%AD%E5%8F%A5/" title="下一篇: MySQL基本查询语句">
+            <a href="/2021/10/31/c%E8%AF%AD%E8%A8%80%E4%B8%AD%E7%9A%84for%E5%BE%AA%E7%8E%AF/" title="下一篇: c语言中的for循环">
                 <i class="fa fa-angle-right"></i>
             </a>
         

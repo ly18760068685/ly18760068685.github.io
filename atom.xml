@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-10-31T15:21:51.047Z</updated>
+  <updated>2021-11-04T11:46:36.044Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>c语言小结（一）</title>
+    <link href="http://example.com/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/"/>
+    <id>http://example.com/2021/11/04/c%E8%AF%AD%E8%A8%80%E5%B0%8F%E7%BB%93%EF%BC%88%E4%B8%80%EF%BC%89/</id>
+    <published>2021-11-04T11:43:57.000Z</published>
+    <updated>2021-11-04T11:46:36.044Z</updated>
+    
+    <content type="html"><![CDATA[<p>算法结构：</p><pre><code>    1、顺序结构、选择结构、循环结构；    2、循环结构又分为while型、do-while型、for循环结构；    3、程序流程图；</code></pre><p>结构化程序设计方法：</p><pre><code>    1、自顶向下；    2、逐步细化；    3、模块化设计；    4、结构化编码。</code></pre><p>数据类型：</p><p>　　常量：常量包括字面常量、直接常量和符号常量；</p><p>　　变量：C语言规定标志符只能由字母、数字和下划线三种字符组成，且第一个字符必须是字母或者下划线；必须压迫先定义后使用；每一个变量被定义以确定类型后，在编译时就能为其分配相应的存储单元；</p><p>　　整数类型：整数常量有十进制、八进制和十六进制；“%d”</p><p>　　整形变量：数据在内存中存放形式是以二进制形式存放；有int型、short int型和long int型，无符号整型变量的范围是-32768—32767，有符号型为0~65535.通常把long定义为32位，把short定义为16位，int可以是32位也可以为16位，这都主要取决于机器字长。</p><p>　　实型常量的表示方法：</p><pre><code>    （1）十进制，0.0；    （2）指数形式，123e3</code></pre><p>　　实型变量：实数型数据在内存中的存放形式，一般在内存中占4个字节，分成整数部分和小数部分存放。实型变量分为float型、double型long double型。实型数据会存在舍入误差。</p><p>　　实型常量的类型：C编译系统将实型常量作为双精度来处理。</p><p>　　字符型数组：</p><pre><code>    （一）字符常量：转义字符（\n——换行，\t——tab,\r——回车，\f——换页，\b——退格，\ddd——1到3位8进制的数代表的字符）    （二）字符变量：字符数据存储形式实际是以ASCII码存储。“%c”</code></pre><p>　　字符串常量：双撇号括起来的一系列字符序列。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;算法结构：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    1、顺序结构、选择结构、循环结构；
+
+    2、循环结构又分为while型、do-while型、for循环结构；
+
+    3、程序流程图；
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;结构化程序设计方法：&lt;/p&gt;
+&lt;pre&gt;&lt;co</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>c语言中的for循环</title>
